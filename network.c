@@ -34,7 +34,7 @@ int retrieve_xml_file(TOC *toc, char *xml_filename) {
     FILE *file = fopen(xml_filename, "wb");
 
     curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0);
-    curl_easy_setopt(curl, CURLOPT_USERAGENT, "RossFrost/Shuuga (rossyfrosty@gmail.com)");
+    curl_easy_setopt(curl, CURLOPT_USERAGENT, "RossFrost/Shuuga");
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, file);
 
